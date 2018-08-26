@@ -1,0 +1,48 @@
+.type {
+    margin-top: 232px;
+    text-align: center;
+    font-size: 47px;
+    color: #10005e;
+}
+@-webkit-keyframes typing {
+    from { width: 0 }
+    to { width:1102px }
+}
+
+@-moz-keyframes typing {
+    from { width: 0 }
+    to { width:1102px }
+}
+
+@-webkit-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+@-moz-keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.type { font-family: Consolas, monospace; }
+
+.type { 
+    white-space:nowrap;
+    overflow:hidden;
+    border-right: .1em solid black;
+    
+    -webkit-animation: typing 7s steps(45, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+    -moz-animation: typing 7s steps(45, end), /* # of steps = # of characters */
+                        blink-caret 1s step-end infinite;
+}
+
+.card {
+    margin-bottom: 26px;
+    box-shadow: 0 3px 5px #10005326;
+}
+
+.card:hover {
+  box-shadow: 0 3px 22px #10005394;
+
+}

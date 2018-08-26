@@ -1,0 +1,19 @@
+{% extends "base.html" %} 
+{% load static %} 
+{% block content %} 
+{% include 'navbar.html' %} 
+<div class="container">
+    <div class="row" style="margin-top: 82px;">
+    {% for details in object_list %}
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{details.First_Name}} {{details.Last_Name}}</h5>
+            <p class="card-text">{{details.Email}}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %} 
+    </div>
+</div>
+{% endblock %}

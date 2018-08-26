@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %} 
+{% block content %}
+{% include 'navbar.html' %}
+<h2 style="text-align:center;">Please provide us with the following informations</h2>
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %} {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
